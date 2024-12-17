@@ -1,0 +1,20 @@
+[project]
+name = "shadow_writer"
+version = "0.1.0"
+description = "shadow_writer using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.86.0,<1.0.0"
+]
+
+[project.scripts]
+shadow_writer = "shadow_writer.main:run"
+run_crew = "shadow_writer.main:run"
+train = "shadow_writer.main:train"
+replay = "shadow_writer.main:replay"
+test = "shadow_writer.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
